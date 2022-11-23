@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react'
 import {BrowserRouter as Router} from 'react-router-dom'
+import Header from './components/screens/Header';
 
 function App() {
   return <>
-          <Router>
-          </Router>
+      <Header/>
   </>
 }
 export default App

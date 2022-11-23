@@ -7,14 +7,14 @@ function Header() {
     <HeaderSection>
         <Div>
             <Ul>
-                <Li>
+                <FirstLi>
                     <ImageContainer >
-                        <Img src={require('../Assets/Images/setting.png')}  alt="Image"/>
+                        <Img src={require('../Assets/Images/settings.png')}  aFirstlt="Image"/>
                     </ImageContainer>
-                </Li>
+                </FirstLi>
                 <Li>
                     <ImageContainer >
-                        <Img src={require('../Assets/Images/bell.png')}  alt="Image"/>
+                        <Img src={require('../Assets/Images/bell5.png')}  alt="Image"/>
                     </ImageContainer>
                 </Li>
                 <Li>
@@ -30,7 +30,9 @@ function Header() {
   )
 }
 const HeaderSection = styled.header`
-    height: 100px; 
+    height: 100px;
+   display: flex;
+   align-items: center;
 `;
 const Div = styled.div`
     width:90%;
@@ -43,17 +45,17 @@ const Ul = styled.ul`
 `;
 const Li  = styled.li`
     margin-right:20px;
-    &:last-child() {
-        margin-right:0;
-    }
+`;
+const FirstLi = styled.li`
+    margin-right: 0;
 `;
 const ImageContainer  = styled.div`
 width: 30px;
 `;
 const Img  = styled.img`
-width: 100%;
-display: block;
-border-radius: 50%;
+    width: 100%;
+    display: block;
+    border-radius: 50%;
  `;
 
 export default Header 

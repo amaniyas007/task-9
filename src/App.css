@@ -15,3 +15,7 @@ button {
 }
 /* https://traveller.talrop.works/api/v1/places/categories/
 https://traveller.talrop.works/api/v1/places/ */
+.{
+    width: 90% ;
+    margin: 0 auto;
+}

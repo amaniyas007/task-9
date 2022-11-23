@@ -1,50 +1,99 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components'
 
 function LeftNavbar() {
   return (
     <>
         <SectionMain>
-          <SectionShadow>
             <SectionWrapper>
                 <SectionTop>
                   <Logo>
                     <LogoImg src={require("../Assets/Images/logo-comp.png")}/>
                   </Logo>
                 </SectionTop>
-                <SectionMiddle></SectionMiddle>
-                <SectionBottom></SectionBottom>
+                <SectionMiddle>
+                    <Ul>
+                      <Li>
+                        <Span>
+                          <SpanImage src={require("")}/>
+                        </Span>
+                        <NavLink>Home</NavLink></Li>
+                      <Li>
+                        <Span>
+                          <SpanImage/>
+                        </Span><NavLink>Scheduler</NavLink></Li>
+                      <Li>
+                        <Span>
+                          <SpanImage src={require("../Assets/Images/Component 115.svg")}/>
+                        </Span><NavLink>Technology</NavLink></Li>
+                      <Li>
+                        <Span>
+                          <SpanImage src={require("")}/>
+                        </Span><NavLink>Rewards</NavLink></Li>
+                      <Li>
+                        <Span>
+                          <SpanImage src={require("")}/>
+                        </Span><NavLink>Notes</NavLink></Li>
+                      <Li>
+                        <Span>
+                          <SpanImage src={require("")}/>
+                        </Span><NavLink>Submission</NavLink></Li>
+                    </Ul>
+                </SectionMiddle>
+                <SectionBottom>
+                  <Div>
+                    <NavImage src={require("../Assets/Images/Rectangle 20.jpg")}/>
+                  </Div>
+                  <BuyPremium>Buy Premium</BuyPremium>
+                  <LearnMore>Learn More</LearnMore>
+                </SectionBottom>
             </SectionWrapper>
-          </SectionShadow>
         </SectionMain>
     </>
   )
 }
 const SectionMain = styled.section`
-height: 100vh;
-width: 200px;
+  width:20%;
+  margin: 4px;
+  box-shadow: 2px 2px 5px 1px grey;
+`;
 
-`;
-const SectionShadow = styled.section`
-  width:95%;
-  margin: 0 auto;
-  box-shadow: 0 0 5px 10px grey;
-`;
 const SectionWrapper = styled.section`
-  width: 90% ;
-  margin: 10px auto;
 `;
-const SectionTop = styled.section``;
+const SectionTop = styled.section`
+  margin: 12px 0 60px;
+`;
 const Logo = styled.h1`
-  display:block;
-  
+  width:25%;
+  margin: 0 auto;
 `;
 const LogoImg = styled.img`
   width:100%;
   display:block;
 `;
 const SectionMiddle = styled.section``;
+const Ul = styled.ul`
+  width: 50%;
+  margin: 0 auto
+`;
+const Li = styled.li`
+
+`;
+const Span = styled.span``;
+const SpanImage = styled.img
 const SectionBottom = styled.section``;
+const Div = styled.div``;
+const NavImage = styled.img`
+  width:100%;
+  display:block;
+`;
+const BuyPremium = styled.button`
+  display:block;
+`;
+const LearnMore = styled.button`
+  display:block;
+`;
 
 
 

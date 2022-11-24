@@ -11,6 +11,9 @@ import Submission from './components/screens/Submission'
 import Rewards from './components/screens/Rewards'
 import Notes from './components/screens/Notes'
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function App() {
   return <Router>
     <Container>
@@ -38,6 +41,6 @@ align-items: start;
 justify-content: space-between;`;
 
 const Wrapper = styled.div`
-  width: 80%;
+  width: 78%;
 `;
 export default App

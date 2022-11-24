@@ -70,7 +70,7 @@ function LeftNavbar() {
   )
 }
 const SectionMain = styled.section`
-  width:19%;
+  width: 17%;
   margin: 4px;
   box-shadow: 0px 3px 10px 3px #d6cdcdc9;
 `;
@@ -90,7 +90,7 @@ const LogoImg = styled.img`
 `;
 const SectionMiddle = styled.section``;
 const Ul = styled.ul`
-  width: 50%;
+  width: 65%;
   margin: 0 auto;
   
 `;
@@ -115,7 +115,7 @@ const LeftLogoImage = styled.img`
 `;
 const SectionBottom = styled.section`
   width: 75%;
-  margin: 65px 2px 30px 68px;
+  margin: 65px 2px 30px 57px;
   box-shadow: 0px 3px 3px 2px #d6cdcdc9;
   text-align: center;
   border-radius: 4px;
@@ -123,7 +123,6 @@ const SectionBottom = styled.section`
 const Div = styled.div`
   width: 40%;
   margin: 0 auto;
-
 `;
 const NavImage = styled.img`
   width:100%;

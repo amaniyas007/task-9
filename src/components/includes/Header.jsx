@@ -35,7 +35,7 @@ const HeaderSection = styled.header`
    align-items: center;
 `;
 const Div = styled.div`
-    width:90%;
+    width:95%;
     margin: 0 auto;
 
 `;

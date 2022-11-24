@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-function Home() {
+function Technology () {
   return (
     <div>
-      <H1>Home</H1>
+      <H1>Technology</H1>
     </div>
   )
 }
@@ -11,4 +11,4 @@ const H1 = styled.h1`
   font-size: 48px;
   
 `;
-export default Home;
+export default Technology;

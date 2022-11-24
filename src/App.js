@@ -41,6 +41,6 @@ align-items: start;
 justify-content: space-between;`;
 
 const Wrapper = styled.div`
-  width: 78%;
+  width: 82%;
 `;
 export default App

@@ -49,12 +49,12 @@ function LeftNavbar() {
                     </LeftLogoContainer>
                     <LinkNav to="notes">Notes</LinkNav>
                     </Li>
-                  <Li>
+                  <LiLast>
                     <LeftLogoContainer>
                       <LeftLogoImage  src={Logos2}  alt="Image"/>
                     </LeftLogoContainer>
                     <LinkNav to="submission">Submission</LinkNav>
-                    </Li>
+                    </LiLast>
                 </Ul>
               </SectionMiddle>
               <SectionBottom>
@@ -98,6 +98,12 @@ const Li = styled.li`
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  color: #9E9696;
+`;
+const LiLast = styled.li`
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
   color: #9E9696;
 `;
 const LinkNav = styled(NavLink)`

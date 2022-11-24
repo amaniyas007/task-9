@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components'
+import Logos from '../Assets/Images/Component 115.svg';
+import Logos1 from '../Assets/Images/Component 117.svg';
+import Logos2 from '../Assets/Images/Component 118.svg';
+import Logos3 from '../Assets/Images/Food-Site.svg';
+import Logos5 from '../Assets/Images/trophy-svgrepo-com.svg';
 
 function LeftNavbar() {
   return (
@@ -15,30 +20,41 @@ function LeftNavbar() {
                 <SectionMiddle>
                     <Ul>
                       <Li>
-                        <Span>
-                          <SpanImage src={require("")}/>
-                        </Span>
-                        <NavLink>Home</NavLink></Li>
+                        <LeftLogoContainer>
+                          <LeftLogoImage src={Logos5}/>
+                        </LeftLogoContainer>
+                        <LinkNav>Home</LinkNav>
+                        </Li>
                       <Li>
-                        <Span>
-                          <SpanImage/>
-                        </Span><NavLink>Scheduler</NavLink></Li>
+                        <LeftLogoContainer>
+                          <LeftLogoImage  src={Logos3} />
+                        </LeftLogoContainer>
+                        <LinkNav>Scheduler</LinkNav>
+                        </Li>
                       <Li>
-                        <Span>
-                          <SpanImage src={require("../Assets/Images/Component 115.svg")}/>
-                        </Span><NavLink>Technology</NavLink></Li>
+                        <LeftLogoContainer>
+                          <LeftLogoImage  src={Logos} alt="Image"/>
+                        </LeftLogoContainer>
+                        <LinkNav>Technology</LinkNav>
+                        </Li>
                       <Li>
-                        <Span>
-                          <SpanImage src={require("")}/>
-                        </Span><NavLink>Rewards</NavLink></Li>
+                        <LeftLogoContainer>
+                          <LeftLogoImage src={Logos5}/>
+                        </LeftLogoContainer>
+                        <LinkNav>Rewards</LinkNav>
+                        </Li>
                       <Li>
-                        <Span>
-                          <SpanImage src={require("")}/>
-                        </Span><NavLink>Notes</NavLink></Li>
+                        <LeftLogoContainer>
+                          <LeftLogoImage  src= {Logos1}  />
+                        </LeftLogoContainer>
+                        <LinkNav>Notes</LinkNav>
+                        </Li>
                       <Li>
-                        <Span>
-                          <SpanImage src={require("")}/>
-                        </Span><NavLink>Submission</NavLink></Li>
+                        <LeftLogoContainer>
+                          <LeftLogoImage  src={Logos2}  alt="Image"/>
+                        </LeftLogoContainer>
+                        <LinkNav>Submission</LinkNav>
+                        </Li>
                     </Ul>
                 </SectionMiddle>
                 <SectionBottom>
@@ -56,7 +72,7 @@ function LeftNavbar() {
 const SectionMain = styled.section`
   width:20%;
   margin: 4px;
-  box-shadow: 2px 2px 5px 1px grey;
+  box-shadow: 0px 3px 10px 3px #d6cdcdc9;
 `;
 
 const SectionWrapper = styled.section`
@@ -74,25 +90,56 @@ const LogoImg = styled.img`
 `;
 const SectionMiddle = styled.section``;
 const Ul = styled.ul`
-  width: 50%;
+  width: 43%;
   margin: 0 auto
 `;
 const Li = styled.li`
+  display: flex;
+  justify-content : space-between;
+  margin-bottom: 32px;
+  color: #9E9696;
+`;
+const LinkNav = styled(NavLink)`
+  color: #9E9696;
+  font-weight: 600;
+`;
+const LeftLogoContainer = styled.div`
+  width: 15%;
+`;
+const LeftLogoImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+const SectionBottom = styled.section`
+  width: 75%;
+  margin: 65px 2px 30px 68px;
+  box-shadow: 0px 3px 3px 2px #d6cdcdc9;
+  text-align: center;
+  border-radius: 4px;
+`;
+const Div = styled.div`
+  width: 40%;
+  margin: 0 auto;
 
 `;
-const Span = styled.span``;
-const SpanImage = styled.img
-const SectionBottom = styled.section``;
-const Div = styled.div``;
 const NavImage = styled.img`
   width:100%;
   display:block;
 `;
 const BuyPremium = styled.button`
-  display:block;
+  display: block;
+  padding: 12px;
+  background: #5C75FB;
+  color: white;
+  border-radius: 6px;
+  font-weight: 600;
+  margin: 24px auto;
 `;
-const LearnMore = styled.button`
-  display:block;
+const LearnMore = styled(Link)`
+  color: #5C75FB;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 24px;
 `;
 
 

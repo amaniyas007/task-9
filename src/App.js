@@ -21,12 +21,12 @@ function App() {
   </Router>
 }
 
-const Container = styled.div`
+const Container = styled.section`
 display: flex;
 align-items: start;
 justify-content: space-between;`;
 
 const Wrapper = styled.div`
-
+  width: 78%;
 `;
 export default App

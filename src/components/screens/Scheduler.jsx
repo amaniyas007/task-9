@@ -73,28 +73,28 @@ function Scheduler () {
             </DivContent>
           </DivTop>
           <DivBottom>
-            <DivLeft>
+            <SectionLeft>
               <H3>Assignment Manager</H3>
-              <DivRouter>
+              <SectionRouter>
                 <Ul>
                   <Li>
-                    Pending
+                    <LinkNav to="pending">Pending</LinkNav>
                   </Li>
                   <Li>
-                    Completed
+                    <LinkNav to="completed">Completed</LinkNav>
                   </Li>
                   <Li>
-                    Submitted
+                    <LinkNav to="submitted">Submitted</LinkNav>
                   </Li>
                 </Ul>
-              </DivRouter>
-            </DivLeft>
-            <DivRight></DivRight>
+              </SectionRouter>
+            </SectionLeft>
+            <SectionRight>
+
+            </SectionRight>
           </DivBottom>
         </SectionWrapper>
       </SectionSpotlight>
-
-      
     </div>
   )
 }
@@ -170,8 +170,15 @@ display: block;
 color: #9E9696;
 font-size: 14px;
 `;
+const DivBottom = styled.div``;
+const SectionLeft = styled.section``;
+const H3 = styled.h3``;
+const DivBottom = styled.div``;
+const DivBottom = styled.div``;
+const DivBottom = styled.div``;
+const DivBottom = styled.div``;
 
-
+const DivBottom = styled.div``;
 
 
 

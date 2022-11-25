@@ -23,7 +23,8 @@ function App() {
         <Header/>
         <Routes>
           <Route path="/" element= {<Home/>} />
-          <Route path="scheduler" element= {<Scheduler/>} />
+          <Route path="scheduler" element= {<Scheduler/>}>
+          </Route>
           <Route path="technology" element= {<Technology/>} />
           <Route path="submission" element= {<Submission/>} />
           <Route path="rewards" element= {<Rewards/>} />

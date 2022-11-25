@@ -88,17 +88,9 @@ function Scheduler () {
                 </Ul>
               <SectionRouter>
                 <Outlet/>
-                <Divtop>
-                  <BPhysics></BPhysics>
-                  <DivProgress>
-                    <SpanLoading></SpanLoading>
-                  </DivProgress>
-                </Divtop>
               </SectionRouter>
             </SectionLeft>
-            <SectionRight>
-
-            </SectionRight>
+            <SectionRight></SectionRight>
           </DivBottom>
         </SectionWrapper>
       </SectionSpotlight>
@@ -195,19 +187,22 @@ const Ul = styled.ul`
   display: flex;
   justify-content: space-between;
   width: 50%;
+  margin-bottom: 32px;
 `;
 const Li = styled.li``;
 const SectionRouter = styled.section`
-
+  
 `;
 const LinkNav = styled(NavLink)`
   color: #9E9696;
   font-weight: 700;
   font-size: 14px
 `;
+
 const SectionRight = styled.section`
   width: 48%;
   background: green;
+
 `;
 
 

@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
-
+import {NavLink, Outlet} from 'react-router-dom'
 
 function Scheduler () {
   return (
@@ -74,8 +74,7 @@ function Scheduler () {
           </DivTop>
           <DivBottom>
             <SectionLeft>
-              <H3>Assignment Manager</H3>
-              <SectionRouter>
+              <H>Assignment Manager</H>
                 <Ul>
                   <Li>
                     <LinkNav to="pending">Pending</LinkNav>
@@ -87,6 +86,14 @@ function Scheduler () {
                     <LinkNav to="submitted">Submitted</LinkNav>
                   </Li>
                 </Ul>
+              <SectionRouter>
+                <Outlet/>
+                <Divtop>
+                  <BPhysics></BPhysics>
+                  <DivProgress>
+                    <SpanLoading></SpanLoading>
+                  </DivProgress>
+                </Divtop>
               </SectionRouter>
             </SectionLeft>
             <SectionRight>
@@ -170,16 +177,38 @@ display: block;
 color: #9E9696;
 font-size: 14px;
 `;
-const DivBottom = styled.div``;
-const SectionLeft = styled.section``;
-const H3 = styled.h3``;
-const DivBottom = styled.div``;
-const DivBottom = styled.div``;
-const DivBottom = styled.div``;
-const DivBottom = styled.div``;
+const DivBottom = styled.div`
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
 
-const DivBottom = styled.div``;
+`;
+const SectionLeft = styled.section`
+  width: 48%;
+`;
+const H = styled.h3`
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 12px;
+`
+const Ul = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+`;
+const Li = styled.li``;
+const SectionRouter = styled.section`
 
+`;
+const LinkNav = styled(NavLink)`
+  color: #9E9696;
+  font-weight: 700;
+  font-size: 14px
+`;
+const SectionRight = styled.section`
+  width: 48%;
+  background: green;
+`;
 
 
 export default Scheduler;

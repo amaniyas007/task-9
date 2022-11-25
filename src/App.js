@@ -13,6 +13,9 @@ import Notes from './components/screens/Notes'
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Pending from './components/screens/Pending';
+import Completed from './components/screens/Completed';
+import Submitted from './components/screens/Submitted';
 
 function App() {
   return <Router>
@@ -24,6 +27,9 @@ function App() {
         <Routes>
           <Route path="/" element= {<Home/>} />
           <Route path="scheduler" element= {<Scheduler/>}>
+            <Route index element={<Pending/>}/>
+            <Route path="completed" element={<Completed/>}/>
+            <Route path="submitted" element={<Submitted/>}/>
           </Route>
           <Route path="technology" element= {<Technology/>} />
           <Route path="submission" element= {<Submission/>} />
@@ -42,6 +48,6 @@ align-items: start;
 justify-content: space-between;`;
 
 const Wrapper = styled.div`
-  width: 82%;
+  width: 83%;
 `;
 export default App

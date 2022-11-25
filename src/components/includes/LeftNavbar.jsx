@@ -110,6 +110,10 @@ const LinkNav = styled(NavLink)`
   color: #9E9696;
   font-weight: 500;
   font-size: 15px;
+  &:hover {
+    color: #000;
+    font-weight:700;
+  }
 `;
 const LeftLogoContainer = styled.div`
   width: 15%;

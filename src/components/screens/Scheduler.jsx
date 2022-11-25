@@ -1,4 +1,5 @@
 import React from 'react'
+import '../../App.css'
 import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
@@ -103,8 +104,8 @@ const SectionWrapper = styled.section`
   margin: 0 auto;
 `;
 const H2 = styled.h2`
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 32px;
 `;
 const DivTop = styled.div`
@@ -179,9 +180,9 @@ const SectionLeft = styled.section`
   width: 48%;
 `;
 const H = styled.h3`
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 24px;
 `
 const Ul = styled.ul`
   display: flex;

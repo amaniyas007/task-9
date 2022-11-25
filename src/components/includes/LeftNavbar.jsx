@@ -73,6 +73,7 @@ const SectionMain = styled.section`
   width: 17%;
   margin: 4px;
   box-shadow: 0px 3px 10px 3px #d6cdcdc9;
+  padding-bottom: 30px;
 `;
 
 const SectionWrapper = styled.section`
@@ -97,7 +98,7 @@ const Ul = styled.ul`
 const Li = styled.li`
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
   color: #9E9696;
 `;
 const LiLast = styled.li`
@@ -125,7 +126,7 @@ const LeftLogoImage = styled.img`
 `;
 const SectionBottom = styled.section`
   width: 75%;
-  margin: 65px 2px 30px 57px;
+  margin: 85px 2px 30px 57px;
   box-shadow: 0px 3px 3px 2px #d6cdcdc9;
   text-align: center;
   border-radius: 4px;
@@ -146,12 +147,14 @@ const BuyPremium = styled.button`
   border-radius: 6px;
   font-weight: 600;
   margin: 24px auto;
+  font-size: 13px;
 `;
 const LearnMore = styled(Link)`
   color: #5C75FB;
   font-weight: 600;
   display: inline-block;
   margin-bottom: 24px;
+  font-size: 13px;
 `;
 
 

@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { Helmet } from 'react-helmet';
 import Slider from "react-slick";
 import {NavLink, Outlet} from 'react-router-dom'
+import CheckGreen from '../Assets/Images/checkgreen.svg';
+import CheckGrey from '../Assets/Images/checkgrey.svg';
 
 function Scheduler () {
   return (
@@ -118,7 +120,7 @@ function Scheduler () {
               <Level>
                 <Line>
                   <CheckGreenContainer>
-                    <CheckGreenImage src={require("../Assets/Images/icongreen.svg")}/>
+                    <CheckGreenImage src={CheckGreen} alt="Image"/>
                   </CheckGreenContainer>
                   <SIUnits>Force and unit</SIUnits>
                   <Time>03:40min</Time>
@@ -127,7 +129,7 @@ function Scheduler () {
 
                 <Line>
                   <CheckGreyContainer>
-                    <CheckGreyImage src={require("../Assets/Images/icongrey.svg")}/>
+                    <CheckGreyImage src={CheckGrey}alt="Image"/>
                   </CheckGreyContainer>
                   <SIUnits>Mass and acceleration</SIUnits>
                   <Time>06:08min</Time>
@@ -136,7 +138,7 @@ function Scheduler () {
 
                 <Line>
                   <CheckGreyContainer>
-                    <CheckGreyImage src={require("../Assets/Images/icongrey.svg")}/>
+                    <CheckGreyImage src={CheckGrey} alt="Image"/>
                   </CheckGreyContainer>
                   <SIUnits>Gain of Momentum</SIUnits>
                   <Time>09:30min</Time>
@@ -263,6 +265,7 @@ const Live = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 27%;
+  margin-bottom: 18px;
 `;
 const LiveSession = styled.h3`
   font-weight: 700;
@@ -287,15 +290,23 @@ const Lecture = styled.h4`
   padding: 18px 0 18px 18px;
 `;
 const Hr = styled.hr`
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
 `;
-const CenterFlex = styled.div``;
+const CenterFlex = styled.div`
+  display: flex;
+`;
 const Left = styled.div``;
-const ForceMomentum = styled.span``;
+const ForceMomentum = styled.p`
+  font-weight: 600;
+  font-size: 16px;
+`;
 const Prof = styled.span``;
 const Blue = styled.small``;
-const Right = styled.div``;
-const ButtonFlex = styled.div``;
+const Right = styled.div`
+`;  
+const ButtonFlex = styled.div`
+  display: flex;
+`;
 const DivPlay = styled.div``;
 const Playbutton = styled.img``;
 const Join = styled.button``;

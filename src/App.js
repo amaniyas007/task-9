@@ -28,6 +28,7 @@ function App() {
           <Route path="/" element= {<Home/>} />
           <Route path="scheduler" element= {<Scheduler/>}>
             <Route index element={<Pending/>}/>
+            <Route path="pending" element={<Pending/>}/>
             <Route path="completed" element={<Completed/>}/>
             <Route path="submitted" element={<Submitted/>}/>
           </Route>
@@ -48,6 +49,6 @@ align-items: start;
 justify-content: space-between;`;
 
 const Wrapper = styled.div`
-  width: 81%;
+  width: 83%;
 `;
 export default App

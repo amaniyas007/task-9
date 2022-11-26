@@ -60,3 +60,12 @@ p{
 .h {
 margin-bottom: 40px;
 }
+.active:hover {
+	font-weight: 700;
+	color: #000;
+}
+.hover:hover {
+	font-weight: 800;
+	border-bottom: 2px solid #1C40FA;
+	color: #000;
+}

@@ -23,37 +23,37 @@ function LeftNavbar() {
                     <LeftLogoContainer>
                       <LeftLogoImage src={Logos5}/>
                     </LeftLogoContainer>
-                    <LinkNav to="/">Home</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "active" : ""} to="/">Home</LinkNav>
                     </Li>
                   <Li>
                     <LeftLogoContainer>
                       <LeftLogoImage  src={Logos3} />
                     </LeftLogoContainer>
-                    <LinkNav to="scheduler">Scheduler</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "active" : ""} to="scheduler">Scheduler</LinkNav>
                     </Li>
                   <Li>
                     <LeftLogoContainer>
                       <LeftLogoImage  src={Logos} alt="Image"/>
                     </LeftLogoContainer>
-                    <LinkNav to="technology">Technology</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "active" : ""} to="technology">Technology</LinkNav>
                     </Li>
                   <Li>
                     <LeftLogoContainer>
                       <LeftLogoImage src={Logos5}/>
                     </LeftLogoContainer>
-                    <LinkNav to="rewards">Rewards</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "active" : ""} to="rewards">Rewards</LinkNav>
                     </Li>
                   <Li>
                     <LeftLogoContainer>
                       <LeftLogoImage  src= {Logos1}  />
                     </LeftLogoContainer>
-                    <LinkNav to="notes">Notes</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "active" : ""} to="notes">Notes</LinkNav>
                     </Li>
                   <LiLast>
                     <LeftLogoContainer>
                       <LeftLogoImage  src={Logos2}  alt="Image"/>
                     </LeftLogoContainer>
-                    <LinkNav to="submission">Submission</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "active" : ""} to="submission">Submission</LinkNav>
                     </LiLast>
                 </Ul>
               </SectionMiddle>
@@ -111,10 +111,6 @@ const LinkNav = styled(NavLink)`
   color: #9E9696;
   font-weight: 500;
   font-size: 15px;
-  &:hover {
-    color: #000;
-    font-weight:700;
-  }
 `;
 const LeftLogoContainer = styled.div`
   width: 15%;

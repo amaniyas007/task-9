@@ -80,13 +80,13 @@ function Scheduler () {
               <H>Assignment Manager</H>
                 <Ul>
                   <Li>
-                    <LinkNav to="pending">Pending</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "hover" : ""} to="pending">Pending</LinkNav>
                   </Li>
                   <Li>
-                    <LinkNav to="completed">Completed</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "hover" : ""} to="completed">Completed</LinkNav>
                   </Li>
                   <Li>
-                    <LinkNav to="submitted">Submitted</LinkNav>
+                    <LinkNav className={({ isActive }) => isActive ? "hover" : ""} to="submitted">Submitted</LinkNav>
                   </Li>
                 </Ul>
               <SectionRouter>

@@ -91,7 +91,62 @@ function Scheduler () {
                 <Outlet/>
               </SectionRouter>
             </SectionLeft>
-            <SectionRight></SectionRight>
+
+            <SectionRight>
+              <Live>
+                <LiveSession>Live Session</LiveSession> <GreenCircle></GreenCircle>
+              </Live>
+              <SectionContent>
+              <Lecture>Ongoing Lecture</Lecture>
+              <Hr/>
+              <SectionPadding>
+              <CenterFlex>
+                <Left>
+                  <ForceMomentum>Force and Momentum revision</ForceMomentum>
+                  <Prof><Blue>Physics</Blue>Prof Lee Dan Qi</Prof>
+                </Left>
+                <Right>
+                  <ButtonFlex>
+                    <DivPlay>
+                      <Playbutton src={require("../Assets/Images/playbutton.png")}/>
+                    </DivPlay>
+                    <Join>Join</Join>
+                  </ButtonFlex>
+                </Right>
+              </CenterFlex>
+              <Hr/>
+              <Level>
+                <Line>
+                  <CheckGreenContainer>
+                    <CheckGreenImage src={require("../Assets/Images/icongreen.svg")}/>
+                  </CheckGreenContainer>
+                  <SIUnits>Force and unit</SIUnits>
+                  <Time>03:40min</Time>
+                  <Buttonbggrey>Medium</Buttonbggrey>
+                </Line>
+
+                <Line>
+                  <CheckGreyContainer>
+                    <CheckGreyImage src={require("../Assets/Images/icongrey.svg")}/>
+                  </CheckGreyContainer>
+                  <SIUnits>Mass and acceleration</SIUnits>
+                  <Time>06:08min</Time>
+                  <Buttonbgdarkgrey>Hard</Buttonbgdarkgrey>
+                </Line>
+
+                <Line>
+                  <CheckGreyContainer>
+                    <CheckGreyImage src={require("../Assets/Images/icongrey.svg")}/>
+                  </CheckGreyContainer>
+                  <SIUnits>Gain of Momentum</SIUnits>
+                  <Time>09:30min</Time>
+                  <Buttonbggrey>Medium</Buttonbggrey>
+                </Line>
+              </Level>
+              </SectionPadding>
+            </SectionContent>
+            </SectionRight>
+            
           </DivBottom>
         </SectionWrapper>
       </SectionSpotlight>
@@ -202,9 +257,58 @@ const LinkNav = styled(NavLink)`
 
 const SectionRight = styled.section`
   width: 48%;
-  background: green;
-
 `;
+const Live = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 27%;
+`;
+const LiveSession = styled.h3`
+  font-weight: 700;
+  font-size: 20px;
+`;
+const GreenCircle = styled.div`
+  Width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #59F195;
+`;
+const SectionContent = styled.section`
+  box-shadow: 0 3px 60px 3px #d6cdcdc9;
+`;
+const SectionPadding = styled.section`
+padding: 28px;
+`
+;
+const Lecture = styled.h4`
+  font-weight: 700;
+  font-size: 17px;
+  padding: 18px 0 18px 18px;
+`;
+const Hr = styled.hr`
+  border-bottom: 2px solid #000;
+`;
+const CenterFlex = styled.div``;
+const Left = styled.div``;
+const ForceMomentum = styled.span``;
+const Prof = styled.span``;
+const Blue = styled.small``;
+const Right = styled.div``;
+const ButtonFlex = styled.div``;
+const DivPlay = styled.div``;
+const Playbutton = styled.img``;
+const Join = styled.button``;
+const Level = styled.section``;
+const Line = styled.div``;
+const CheckGreenContainer = styled.div``;
+const CheckGreenImage = styled.img``;
+const SIUnits = styled.p``;
+const Time = styled.span``;
+const Buttonbggrey = styled.button``;
+const CheckGreyContainer = styled.div``;
+const CheckGreyImage = styled.img``;
+const Buttonbgdarkgrey = styled.button``;
 
 
 export default Scheduler;

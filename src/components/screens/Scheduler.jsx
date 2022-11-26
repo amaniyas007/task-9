@@ -112,7 +112,7 @@ function Scheduler () {
                     <DivPlay>
                       <Playbutton src={require("../Assets/Images/playbutton.png")}/>
                     </DivPlay>
-                    <Join>Join</Join>
+                    <Join>join</Join>
                   </ButtonFlex>
                 </Right>
               </CenterFlex>
@@ -123,7 +123,7 @@ function Scheduler () {
                     <CheckGreenImage src={CheckGreen} alt="Image"/>
                   </CheckGreenContainer>
                   <SIUnits>Force and unit</SIUnits>
-                  <Time>03:40min</Time>
+                  <Time><B>03:40</B>min</Time>
                   <Buttonbggrey>Medium</Buttonbggrey>
                 </Line>
 
@@ -132,7 +132,7 @@ function Scheduler () {
                     <CheckGreyImage src={CheckGrey}alt="Image"/>
                   </CheckGreyContainer>
                   <SIUnits>Mass and acceleration</SIUnits>
-                  <Time>06:08min</Time>
+                  <Time><B>06:08</B>min</Time>
                   <Buttonbgdarkgrey>Hard</Buttonbgdarkgrey>
                 </Line>
 
@@ -141,7 +141,7 @@ function Scheduler () {
                     <CheckGreyImage src={CheckGrey} alt="Image"/>
                   </CheckGreyContainer>
                   <SIUnits>Gain of Momentum</SIUnits>
-                  <Time>09:30min</Time>
+                  <Time><B>09:30</B>min</Time>
                   <Buttonbggrey>Medium</Buttonbggrey>
                 </Line>
               </Level>
@@ -294,32 +294,90 @@ const Hr = styled.hr`
 `;
 const CenterFlex = styled.div`
   display: flex;
+  justify-content: space-between;
+  width: 93%;
 `;
-const Left = styled.div``;
+const Left = styled.div`
+  margin-bottom: 28px;
+`;
 const ForceMomentum = styled.p`
   font-weight: 600;
   font-size: 16px;
+  margin-bottom: 5px;
 `;
-const Prof = styled.span``;
-const Blue = styled.small``;
+const Prof = styled.span`
+  font-size: 14px;
+`;
+const Blue = styled.span`
+  color: #5C75FB;
+  margin-right: 6px
+`;
 const Right = styled.div`
 `;  
 const ButtonFlex = styled.div`
   display: flex;
+  border-radius: 4px;
+  margin-top: 3px;
 `;
-const DivPlay = styled.div``;
-const Playbutton = styled.img``;
-const Join = styled.button``;
-const Level = styled.section``;
-const Line = styled.div``;
+const DivPlay = styled.div`
+  background: #1C40FA;
+  width: 26%;
+  border-radius: 4px 0 0 4px;
+`;
+const Playbutton = styled.img`
+  width: 100%;
+  display: block;
+`;
+const Join = styled.button`
+  background: #5C75FB;
+  width: 55%;
+  padding: 12px 8px;
+  border-radius: 0 4px  4px 0;
+  color: #fff;
+  font-size: 16px;
+`;
+const Level = styled.section`
+  padding-top: 28px;
+  margin-bottom: -22px;
+`;
+const Line = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+`;
 const CheckGreenContainer = styled.div``;
-const CheckGreenImage = styled.img``;
-const SIUnits = styled.p``;
-const Time = styled.span``;
-const Buttonbggrey = styled.button``;
+const CheckGreenImage = styled.img`
+  width: 100%;
+  display: block;
+`;
+const SIUnits = styled.p`
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  width: 30%;
+`;
+const B = styled.b`
+  font-weight: 600;
+  color: #000;
+`
+const Time = styled.span`
+  font-size: 15px;
+  color: #9E9696;
+  width: 22%;
+`;
+const Buttonbggrey = styled.button`
+  padding: 11px 20px;
+  background: #c9c9c9;
+  border-radius: 7px;
+`;
 const CheckGreyContainer = styled.div``;
 const CheckGreyImage = styled.img``;
-const Buttonbgdarkgrey = styled.button``;
-
+const Buttonbgdarkgrey = styled.button`
+padding: 11px 30px;
+background: #9E9696;
+border-radius: 7px;
+`;
+  
 
 export default Scheduler;

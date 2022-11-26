@@ -70,10 +70,10 @@ function LeftNavbar() {
   )
 }
 const SectionMain = styled.section`
-  width: 17%;
+  width: 19%;
   margin: 4px;
   box-shadow: 0px 3px 10px 3px #d6cdcdc9;
-  padding-bottom: 30px;
+  padding-bottom: 90px;
 `;
 
 const SectionWrapper = styled.section`

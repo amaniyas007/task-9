@@ -15,7 +15,17 @@ function Scheduler () {
       </Helmet>
       <SectionSpotlight>
         <SectionWrapper>
-          <H2>New Lessons Board</H2>
+          <Arrowflex>
+            <H2>New Lessons Board</H2>
+            <Arrows>
+              <Arrowleft>
+                <ArrowImg src={require("../Assets/Images/leftarrow.png")}/>
+              </Arrowleft>
+              <Arrowright>
+                <ArrowImg src={require("../Assets/Images/rightarrow.png")}/>
+              </Arrowright>
+            </Arrows>
+          </Arrowflex>
           <DivTop>
             <DivContent>
               <DivImgContainer>
@@ -159,6 +169,27 @@ const SectionSpotlight = styled.section``;
 const SectionWrapper = styled.section`
   width: 91%;
   margin: 0 auto;
+`;
+const Arrowflex = styled.div`
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+`;
+const Arrows = styled.div`
+	display:flex;
+  justify-content: space-between;
+  width: 8%;
+}
+`;
+const Arrowleft = styled.span`
+  width: 33%;
+`;
+const Arrowright = styled.span`
+  width: 35%;
+`;
+const ArrowImg = styled.img`
+	width: 100%;
+	display: block;
 `;
 const H2 = styled.h2`
   font-size: 24px;

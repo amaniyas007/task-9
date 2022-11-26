@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../App.css'
 import styled from 'styled-components';
 
@@ -24,11 +24,7 @@ function Pending() {
             <DivLeft>
                 <Flex>
                     <H4>Mental Math l</H4>
-                    <DivLoading>
-                        <SpanDarkBlue></SpanDarkBlue>
-                    </DivLoading>
                 </Flex>
-                
                 <Due>Class test | Due Tomorrow</Due>
             </DivLeft>
             <DivRight>
